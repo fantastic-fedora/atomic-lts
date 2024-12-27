@@ -1,0 +1,14 @@
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/kwizart/kernel-longterm-6.6/repo/fedora-41/kwizart-kernel-longterm-6.6-fedora-41.repo
+    remove:
+      - kernel
+      - kernel-core
+      - kernel-modules
+      - kerel-modules-extra
+    install:
+      - kernel-longterm
+      - kernel-longterm-core
+      - kernel-longterm-modules
+      - kernel-longterm-modules-extra
